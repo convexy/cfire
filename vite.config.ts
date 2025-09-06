@@ -5,8 +5,8 @@ export default defineConfig({
     build: {
         lib: {
             entry: resolve(__dirname, "src/index.ts"),  // ライブラリのエントリ
-            name: "MyThreeLib",                         // UMD 用グローバル名
-            fileName: (format) => `my-three-lib.${format}.js`,
+            name: "CFire",                         // UMD 用グローバル名
+            fileName: (format) => `cfire.${format}.js`,
         },
         rollupOptions: {
             // three.js は外部依存として扱う（バンドルに含めない）
